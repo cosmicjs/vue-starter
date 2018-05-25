@@ -8,9 +8,11 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "develop": "npm run dev",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "import": "node ./scripts/import.js"
   },
   "dependencies": {
     "cosmicjs": "^3.2.7",
