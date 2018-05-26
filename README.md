@@ -1,22 +1,16 @@
-# vue-starter
+# Vue Starter
+Vue starter app powered by [Cosmic JS](https://cosmicjs.com) 🚀
 
-> Nuxt.js project
+## Installation
+Install via the [Cosmic CLI](https://github.com/cosmicjs/cosmic-cli).
+```bash
+npm i cosmic-cli -g
 
-## Build Setup
+# Login to your Cosmic JS account
+cosmic login
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+# Installs example content to a new or existing Bucket and downloads the app locally
+cosmic init vue-starter
+cd vue-starter
+cosmic start
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
