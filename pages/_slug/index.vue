@@ -2,8 +2,8 @@
   <div>
     <div class="hero"><h1><a href="/">Cosmic JS Vue Starter</a></h1></div>
     <div class="main">
-      <h1>{{ page.title }}</h1>
-      <div>{{ page.content }}</div>
+      <PageNotFound v-if="page.component && page.component==='404'" />
+      <Page :page="page" v-else />
       <Nav />
       <Footer />
     </div>
@@ -12,19 +12,32 @@
 <script>
 import Nav from '~/components/Nav.vue'
 import Footer from '~/components/Footer.vue'
+import Page from '~/components/Page.vue'
+import PageNotFound from '~/components/404.vue'
 import bucket from '~/config'
 export default {
   async asyncData({ req, params }) {
     let slug = params.slug
+    let page
     if (!slug)
       slug = 'home'
-    const res = await bucket.getObject({ slug })
-    const page = res.object
+    try {
+      const res = await bucket.getObject({ slug })
+      page = res.object
+    }
+    catch(e) {
+      page = {
+        title: 'Page not found',
+        component: '404'
+      }
+    }
     return { page }
   },
   components: {
     Nav,
-    Footer
+    Page,
+    Footer,
+    PageNotFound
   },
   head () {
     return {
