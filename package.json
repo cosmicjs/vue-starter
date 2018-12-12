@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "cosmicjs": "^3.2.7",
-    "nuxt": "^1.0.0"
+    "nuxt": "^2.3.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
