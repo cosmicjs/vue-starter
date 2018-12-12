@@ -34,5 +34,9 @@ module.exports = {
         })
       }
     }
+  },
+  env: {
+    COSMIC_BUCKET: process.env.COSMIC_BUCKET || 'node-starter',
+    COSMIC_READ_KEY: process.env.COSMIC_READ_KEY || '',
   }
 }
