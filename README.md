@@ -14,3 +14,5 @@ cosmic init vue-starter
 cd vue-starter
 cosmic start
 ```
+## [Vue.js CMS](https://cosmicjs.com/knowledge-base/vuejs-cms)
+Cosmic JS offers a [Headless CMS](https://cosmicjs.com/headless-cms) used to power content for your Vue.js websites and apps.
