@@ -15,14 +15,14 @@
     "import": "node ./scripts/import.js"
   },
   "dependencies": {
-    "cosmicjs": "^3.2.7",
-    "nuxt": "^2.3.4"
+    "cosmicjs": "^3.4.4",
+    "nuxt": "^3.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-vue": "^4.0.0"
   }
 }
